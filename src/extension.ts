@@ -142,8 +142,6 @@ const prefixOp = gll.map(
   exec => ctx => {
     const result: any = exec(ctx);
 
-    console.log(result);
-
-    return result[0](result[1][0]);
+    return result[0](result[1]);
   }
 );
